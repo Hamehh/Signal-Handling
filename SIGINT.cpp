@@ -7,7 +7,7 @@ bool running = true;
 
 void signal_handler(int signum)
 {
-    printf("Caught signal %d\n", signum);
+    printf("\nCaught signal %d\n", signum);
     fflush(stdout);
     running = false;
 }
